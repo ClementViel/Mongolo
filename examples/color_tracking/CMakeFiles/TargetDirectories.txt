@@ -1,0 +1,1 @@
+/home/clem/Programmation/Mongolo/examples/color_tracking/CMakeFiles/ColorTracking.dir
