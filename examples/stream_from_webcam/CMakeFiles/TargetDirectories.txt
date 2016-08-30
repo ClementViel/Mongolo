@@ -1,0 +1,1 @@
+/home/clem/Projets/clement_perso/Mongolo/examples/stream_from_webcam/CMakeFiles/GetWebcamStream.dir

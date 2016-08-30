@@ -1,0 +1,1 @@
+/home/clem/Projets/clement_perso/Mongolo/examples/color_detect/CMakeFiles/ColorDetect.dir

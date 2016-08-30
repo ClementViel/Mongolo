@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( GetWebcamStream )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( GetWebcamStream GetWebcamStream.cpp )
+target_link_libraries( GetWebcamStream ${OpenCV_LIBS}  )
