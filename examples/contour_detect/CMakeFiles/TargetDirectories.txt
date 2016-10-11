@@ -1,0 +1,3 @@
+/home/clem/Projets/perso/Mongolo/examples/contour_detect/CMakeFiles/edit_cache.dir
+/home/clem/Projets/perso/Mongolo/examples/contour_detect/CMakeFiles/rebuild_cache.dir
+/home/clem/Projets/perso/Mongolo/examples/contour_detect/CMakeFiles/ContourDetect.dir

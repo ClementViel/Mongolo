@@ -1,1 +1,3 @@
-/home/clem/Projets/clement_perso/Mongolo/examples/color_detect/CMakeFiles/ColorDetect.dir
+/home/clem/Projets/perso/Mongolo/examples/color_detect/CMakeFiles/edit_cache.dir
+/home/clem/Projets/perso/Mongolo/examples/color_detect/CMakeFiles/rebuild_cache.dir
+/home/clem/Projets/perso/Mongolo/examples/color_detect/CMakeFiles/ColorDetect.dir

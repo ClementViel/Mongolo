@@ -1,4 +1,4 @@
-# Install script for directory: /home/clem/Projets/clement_perso/Mongolo/examples/color_detect
+# Install script for directory: /home/clem/Projets/perso/Mongolo/examples/color_detect
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/clem/Projets/clement_perso/Mongolo/examples/color_detect/${CMAKE_INSTALL_MANIFEST}" "")
-foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/clem/Projets/clement_perso/Mongolo/examples/color_detect/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
-endforeach()
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+file(WRITE "/home/clem/Projets/perso/Mongolo/examples/color_detect/${CMAKE_INSTALL_MANIFEST}"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
