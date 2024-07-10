@@ -16,12 +16,27 @@ drawing_spec = mp_drawing.DrawingSpec(
     color=(128, 0, 128), thickness=2, circle_radius=1)
 
 # Pattern definitions through list using : https://github.com/ManuelTS/augmentedFaceMeshIndices/blob/master
-face_controllers_landmark_idx = [
-    11, 12, 13, 14, 15, 16, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
-left_eye_landmark = []
-right_eye_landmark = []
-left_eyebrow_landmark = []
-right_eyebrow_landmark = []
+face_controllers_landmark_idx = []
+
+left_eye_landmark = [
+    247, 30, 29, 27, 28, 56, 190, 243, 133, 173, 157, 158, 159, 160, 161, 246,
+    130, 7, 163, 144, 145, 153, 154, 155, 112, 26, 22, 23, 24, 110
+]
+
+right_eye_landmark = [
+    249, 390, 373, 374, 381, 382, 362, 398, 384, 385, 386, 387, 388, 466,
+    255, 339, 254, 253, 252, 256, 341, 463, 414, 286, 258, 257, 259, 260,
+    467
+]
+
+left_eyebrow_landmark = [
+    46, 53, 52, 65, 55
+]
+
+right_eyebrow_landmark = [
+    285, 295, 282, 283, 276
+]
+
 mouth_left_landmark = []
 mouth_right_landmark = []
 mouth_open_close_landmark = []
@@ -45,11 +60,8 @@ while cap.isOpened():
     for index in range(0, len(face_controllers_landmark_idx)):
         landmark_tmp.append(
             results.multi_face_landmarks[0].landmark[face_controllers_landmark_idx[index]])
-
     face_controllers_landmarks = landmark_pb2.NormalizedLandmarkList(
         landmark=landmark_tmp)
-    test_connection_tuple = frozenset(
-        [(10, 11), (11, 12), (12, 13), (13, 14)])
     mp_drawing.draw_landmarks(image=image,
                               landmark_list=face_controllers_landmarks,
                               connections=mp_face_mesh.FACEMESH_TESSELATION,
