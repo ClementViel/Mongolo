@@ -17,7 +17,6 @@ drawing_spec = mp_drawing.DrawingSpec(
 
 # Pattern definitions through list using : https://github.com/ManuelTS/augmentedFaceMeshIndices/blob/master
 face_controllers_landmark_idx = []
-
 left_eye_landmark = [
     247, 30, 29, 27, 28, 56, 190, 243, 133, 173, 157, 158, 159, 160, 161, 246,
     130, 7, 163, 144, 145, 153, 154, 155, 112, 26, 22, 23, 24, 110
@@ -37,9 +36,17 @@ right_eyebrow_landmark = [
     285, 295, 282, 283, 276
 ]
 
-mouth_left_landmark = []
-mouth_right_landmark = []
-mouth_open_close_landmark = []
+mouth_left_landmark = [
+    185, 184, 183, 42, 61, 76, 77, 96, 146
+]
+
+mouth_right_landmark = [
+    311, 310, 415, 407, 324, 319, 402, 403
+]
+
+mouth_open_close_landmark = [
+    11, 12, 13, 14, 15, 16, 17
+]
 
 
 cap = cv2.VideoCapture(0)
